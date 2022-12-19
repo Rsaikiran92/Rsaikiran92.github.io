@@ -30,30 +30,6 @@ export default function Projects() {
     },
   ];
   const projects2 = [
-    {
-      image: "MusicApp",
-      name: "Simple Music App",
-      desc: " It's a Simple Music app Where user go through musics stored in our server. Focused on Filter and Sorting functionality.",
-      techStack: "ReactJS | Redux | json-server",
-      github: "https://github.com/Sahnawaz7hussain/Music-app",
-      demo: "https://musicapp-rho.vercel.app/",
-    },
-    {
-      image: "",
-      name: "Product Website",
-      desc: "It's a Simple Product website. Focused on complete cart functionality.",
-      techStack: "ReactJS | Redux | json-server",
-      github: "https://github.com/Sahnawaz7hussain/product-website",
-      demo: "https://product-webiste.vercel.app/",
-    },
-    {
-      image: "",
-      name: "Todo App",
-      desc: "It's a basic Todo App In this App User Can do complete CRUD operation.",
-      techStack: "ReactJS | ContextAPI | json-server",
-      github: "https://github.com/Sahnawaz7hussain/Todo_crud_with_context_api",
-      demo: "https://todo-crud-nine.vercel.app/",
-    },
   ];
 
   return (
