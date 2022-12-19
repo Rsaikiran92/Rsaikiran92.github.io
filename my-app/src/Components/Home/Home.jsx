@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button, Nav} from "react-bootstrap";
 import {FaGithub,FaLinkedinIn,FaTwitter} from "react-icons/fa"
+import {socialsData} from "./Data"
 
 import "./Home.css"
 
@@ -29,22 +30,24 @@ function Home() {
                 </div>
                 <Button style={{backgroundColor:"#76263f",marginLeft:"40px" , borderColor:"#76263f"}} >Resume</Button>
                 <Col style={{marginLeft:"30px",width:"100px",display:"flex",alignItems:"center",justifyContent:"center",gap:"1rem",marginTop:"10px"}} >
-                <Nav.Link
-                  to="https://github.com/Rsaikiran92"
-                  target="_parent"
-                  rel="noreferrer"
+                <a
+                  href={socialsData.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   
                 >
                   <FaGithub aria-label="GitHub" />
-                </Nav.Link>
+                </a>
+                <button>
                 <a
-                  href="https://github.com/Rsaikiran92"
+                  href={socialsData.github}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
+                  style={{border:"1px solid red"}}
                   
                 >
                   <FaLinkedinIn aria-label="LinkedIn" />
-                </a>
+                </a></button>
                 <a
                   
                   target="_blank"
