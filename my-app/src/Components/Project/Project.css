@@ -2,7 +2,7 @@
   background-color: #fadecd;
   /* background-color: blue; */
   padding-bottom: 30px;
-  padding-top: 20px;
+  padding-top: 60px;
 }
 
 .commonContainer {
@@ -23,17 +23,19 @@
 .headingPro {
   text-align: center;
   margin: auto;
-  color: white;
-  font-size: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #76263f;
+  font-size: 3.5rem;
+  font-family:var(--primaryFont);
+  font-style: normal;
+  font-weight: bold;
   margin-top: 50px;
-  margin-bottom: 6px;
+  margin-bottom: 41px;
 }
 .linePro {
   width: 200px;
   margin: auto;
   margin-bottom: 35px;
-  border: 2px solid #dd9a05;
+  border: 2px solid #76263f;
 }
 
 .commonPic {
@@ -64,7 +66,7 @@
 }
 .atag {
   text-decoration: none;
-  color: white;
+  color: #76263f;
 }
 .projectPara {
   color: white;
@@ -97,18 +99,21 @@
 
 .live {
   border: none;
-  color: red;
+  color: #76263f;
   background-color: #fadecd;;
-  border: 1px solid #fadecd;;
+  border: 1px solid #76263f;;
   border-radius: 7px;
   font-size: 16px;
   padding: 10px 14px;
 }
-.live:hover {
-  border: none;
+.atag:hover {
   color: #dd9a05;
-  background-color: #fadecd;
-  border: 1px solid #dd9a05;
+}
+.live.atag:hover {
+  border: none;
+  color: white;
+  background-color: #76263f;
+  border: 1px solid #76263f;
   cursor: pointer;
   /* padding: 11px 15px; */
 }
@@ -171,6 +176,9 @@
 }
 /* Media Query for low resolution  Tablets, Ipads completed */
 @media (min-width: 481px) and (max-width: 767px) {
+  .headingPro{
+    font-size: 2.5rem;
+  }
   .pro {
     background-color: #fadecd;
   }
@@ -182,7 +190,7 @@
     display: block;
     box-sizing: border-box;
     padding-bottom: 20px;
-    background-color: #fadecd;
+    background-color: #76263f;
   }
   .commonPic {
     width: 100%;
@@ -198,7 +206,7 @@
   .projectHeading {
     margin-top: 10px;
     text-align: center;
-    color: #bc4123;
+    color: #dd9a05;
   }
   .projectPara {
     font-size: 17px;
@@ -219,22 +227,25 @@
     margin-top: 10px;
   }
   .live {
-    background-color: #bc4123;
-    border-color: #bc4123;
+    background-color: #fadecd;
+    border-color:#76263f;
   }
   .atag:hover {
-    color: #bc4123;
+    color: #dd9a05;
   }
   .live:hover {
     border-color: #bc4123;
   }
   .teckSpan {
-    color: #bc4123;
+    color: #dd9a05;
   }
 }
 /* mobile */
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
+  .headingPro{
+    font-size: 2.5rem;
+  }
   .pro {
     background-color: #fadecd
   }

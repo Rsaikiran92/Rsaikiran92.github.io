@@ -1,13 +1,12 @@
 import GitHubCalender from "react-github-calendar"
-import Card from 'react-github-stats-card/dist/Card';
+import "./Github.css"
 
 function Github(){
     return (
         <div style={{backgroundColor:" #fadecd"}}>
-    <div style={{margin:"auto",width:"60%"}}>
-        <h1>GitHub Calendar</h1>
-    <GitHubCalender username="Rsaikiran92"  />
-    <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=rsaikiran92&" alt="rsaikiran92" /></p>
+    <div  style={{margin:"auto",width:"100%",padding:"40px"}}>
+        <h2 className="githubheading">GitHub Calendar</h2>
+    <GitHubCalender username="Rsaikiran92" style={{marginBottom:"30px",width:"100%" ,margin:"auto"}} />
     </div> 
     </div>
 )

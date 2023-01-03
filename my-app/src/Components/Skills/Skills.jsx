@@ -16,7 +16,7 @@ function Skills() {
   };
 
   return (
-    <div className="skills" style={{ backgroundColor: "#fadecd" }}>
+    <div className="skills" style={{ backgroundColor: "#fadecd" }} id="skills">
       <div className="skillsHeader">
         <h2 style={{ color: "#76263f" }}>Skills</h2>
       </div>

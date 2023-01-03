@@ -34,8 +34,8 @@ export default function Projects() {
 
   return (
     <div id="projects" className="pro">
-      <h1 className="headingPro">My Projects</h1>
-      <hr className="linePro" />
+      <h2 className="headingPro">My Projects</h2>
+      
       {projects.map((item) => (
         <div key={item.name} className="commonContainer">
           <img className="commonPic" src={item.image} alt={item.name} />

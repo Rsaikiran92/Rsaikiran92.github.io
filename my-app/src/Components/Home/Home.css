@@ -1,8 +1,8 @@
 .wave {
-    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.1s; /* Change to speed up or slow down */
-    animation-iteration-count: infinite; /* Never stop waving :) */
-    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    animation-name: wave-animation; 
+    animation-duration: 2.1s; 
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%; 
     display: inline-block;
   }
   
@@ -12,7 +12,7 @@
     }
     10% {
       transform: rotate(14deg);
-    } /* The following five values can be played with to make the waving more or less extreme */
+    } 
     20% {
       transform: rotate(-8deg);
     }
@@ -27,28 +27,33 @@
     }
     60% {
       transform: rotate(0deg);
-    } /* Reset for the last half to pause */
+    } 
     100% {
       transform: rotate(0deg);
     }
   }
-  /*
-  #tsparticles {
-    position: fixed !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    width: 100%;
-    height: 100%;
-  }
-  */
- 
+
+  .iconbtn a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 10px;
+    color: #76263f;
+    display: inline-block ;
+}
+
+/*
+.iconbtn{
+    margin-left: 40px;
+}
+*/
   
   .home-header {
     padding-top: 80px !important;
+    padding-bottom: 80px;
   }
   
   .home-section {
-    position: relative;
+    /*position: relative;
     z-index: -1;
     
     background-position: top center;
@@ -66,17 +71,21 @@
   
   .heading {
     font-size: 2.4em !important;
+    /*
     padding-left: 50px !important;
+    */
   }
   
   .heading-name {
     font-size: 2.5em !important;
+    /*
     padding-left: 45px !important;
-    color: red;
+    */
+    color: #76263f;
   }
   
   .main-name {
-    color: #cd5ff8;
+    color: #76263f;
   }
   
   .Typewriter__wrapper {
@@ -103,7 +112,10 @@
   
   .myAvtar {
     justify-content: center !important;
+    align-items: center;
+    /*
     padding-top: 9em !important;
+    */
   }
   
   @media (max-width: 767px) {

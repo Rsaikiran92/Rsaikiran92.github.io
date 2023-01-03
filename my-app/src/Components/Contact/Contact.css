@@ -1,0 +1,40 @@
+#contact{
+    background-color: #76263f;
+    color: white;
+}
+
+.leftbox{
+    flex-basis:35%;
+}
+
+.leftbox p{
+    margin-top: 10px;
+} 
+.leftbox p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: white;
+    display: inline-block ;
+}
+
+
+.icons a:hover{
+    color: black;
+    transform: translate(-5px);
+}
+.icons{
+    margin-left: 20px;
+}
+.btn.btn2{
+    display: inline-block;
+    background-color: white;
+    margin-top: 20px;
+}
+

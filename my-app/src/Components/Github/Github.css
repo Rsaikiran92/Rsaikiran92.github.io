@@ -1,0 +1,15 @@
+.githubheading{
+    font-size: 3.5rem;
+    color: #76263f;
+    font-family:var(--primaryFont) ;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 600px){
+    .githubheading{
+        font-size: 2.5rem;
+     
+    }
+}
