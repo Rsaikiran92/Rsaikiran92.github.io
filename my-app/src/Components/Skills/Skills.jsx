@@ -3,9 +3,9 @@ import Marquee from "react-fast-marquee";
 
 import "./Skills.css";
 
-//import { ThemeContext } from "../../contexts/ThemeContext";
+
 import { skillsData } from "./SkillsData";
-// import { skillsImage } from "../../utils/skillsImage";
+
 
 function Skills() {
  
@@ -16,9 +16,9 @@ function Skills() {
   };
 
   return (
-    <div className="skills" style={{ backgroundColor: "#fadecd" }} id="skills">
+    <div className="skills" style={{ backgroundColor: "#fadecd"}} id="skills">
       <div className="skillsHeader">
-        <h2 style={{ color: "#76263f" }}>Skills</h2>
+        <h2 style={{ color: "#76263f",marginTop:"70px" }}>Skills</h2>
       </div>
       <div className="skillsContainer">
         <div className="skill--scroll">

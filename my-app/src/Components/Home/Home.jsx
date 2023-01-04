@@ -38,8 +38,10 @@ function Home() {
                 </div>
               </Col>
   
-              <Col md={5} className="myAvtar" style={{ paddingBottom: 20,margin:"auto"}}>
+              <Col md={4} className="myAvtar" style={{ paddingBottom: 20,margin:"auto"}}>
                 <img
+                  align="center"
+                  width={"100%"}
                   src="https://avatars.githubusercontent.com/u/103918668?v=4"
                   alt="home pic"
                   className="img-fluid"

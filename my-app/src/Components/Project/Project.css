@@ -6,7 +6,7 @@
 }
 
 .commonContainer {
-  height: 300px;
+  /*height: 300px;*/
   width: 80%;
   border: 1px solid #76263f;
   background-color: #76263f;
@@ -17,7 +17,7 @@
   justify-content: space-between;
   margin-bottom: 50px;
   box-sizing: border-box;
-  padding: 0px;
+  padding: 10px;
   transition: 0.5s ease-in-out;
 }
 .headingPro {

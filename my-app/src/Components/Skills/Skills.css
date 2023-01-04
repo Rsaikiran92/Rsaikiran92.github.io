@@ -5,7 +5,7 @@
     justify-content: flex-start;
     min-height: 60vh;
     padding: 7rem 2rem 3rem 2rem;
-    border: "2px solid red";
+    border: "2px solid black";
   }
   
   .skillsHeader {
@@ -150,12 +150,4 @@
       margin-top: 1rem;
     }
   }
-  
-  @media screen and (max-width: 400px) {
-  }
-  
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
-  }
-  
-  @media only screen and (device-width: 768px) {
-  }
+ 

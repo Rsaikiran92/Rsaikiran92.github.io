@@ -10,7 +10,7 @@ import {FcAbout} from "react-icons/fc"
 import {GiSkills,GiNotebook} from "react-icons/gi"
 
 import "./Navbar.css"
-
+import "../Resume/R-saikiran-Resume.pdf"
 
 
 function NavBar() {
@@ -88,7 +88,9 @@ function NavBar() {
                 
                 className="nav-link"
                 href="../Resume/R-saikiran-Resume.pdf"
-                download
+                download="R-saikiran-Resume.pdf"
+                target="_blank"
+                rel="noreferrer"
               >
                 <GiNotebook style={{ marginBottom: "2px" }} /> Resume
               </a>
