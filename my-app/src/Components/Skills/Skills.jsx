@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 import "./Skills.css";
 
 
-import { skillsData } from "./SkillsData";
+import { skillsData ,skillsData2} from "./SkillsData";
 
 
 function Skills() {
@@ -32,6 +32,26 @@ function Skills() {
             direction="left"
           >
             {skillsData.map((skill, id) => (
+              <div className="skill--box" key={id} style={skillBoxStyle}>
+                <img src={skill.image} alt={skill} />
+                <h3 style={{ color: "#76263f" }}>{skill.skill}</h3>
+              </div>
+            ))}
+          </Marquee>
+        </div>
+      </div>
+      <div className="skillsContainer" style={{marginTop:"0px"}}>
+        <div className="skill--scroll">
+          <Marquee
+            gradient={false}
+            speed={80}
+            pauseOnHover={true}
+            pauseOnClick={true}
+            delay={0}
+            play={true}
+            direction="right"
+          >
+            {skillsData2.map((skill, id) => (
               <div className="skill--box" key={id} style={skillBoxStyle}>
                 <img src={skill.image} alt={skill} />
                 <h3 style={{ color: "#76263f" }}>{skill.skill}</h3>

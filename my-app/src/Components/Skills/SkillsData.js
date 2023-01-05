@@ -27,6 +27,15 @@ export const skillsData = [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png",
     },
     {
+      skill:"mongoose",
+      image:"https://avatars.githubusercontent.com/u/7552965?s=280&v=4"
+    }
+    
+  ];
+
+
+  export const skillsData2=[
+    {
       skill: "CSS",
       image:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
@@ -51,5 +60,9 @@ export const skillsData = [
     {
       skill: "Github",
       image: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
-    },
-  ];
+    }, 
+    {
+      skill:"React Router",
+      image:"https://reactrouter.com/twitterimage.jpg"
+    }
+  ]
