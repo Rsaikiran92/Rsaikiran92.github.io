@@ -6,6 +6,14 @@ export default function Projects() {
   const projects = [
     {
       image: "",
+      name: "bestbuy.com",
+      desc: "It's an ecommerce website in which user can buy electronics gadgets.",
+      techStack: "React | ChakraUI | Router",
+      github: "https://github.com/Durgesh9871/Siliconix",
+      demo: "https://siliconix.netlify.app/",
+    },
+    {
+      image: "",
       name: "maxfashion.in",
       desc: " It's an ecommerce website in which user can buy clothes.",
       techStack: "HTML | CSS | Javascript",
@@ -18,14 +26,6 @@ export default function Projects() {
       desc: "It's a news wedside in which user can read any type of news.",
       techStack: "HTML | CSS | Javascript",
       github: "https://github.com/Ravi-047/swank-meeting-7218",
-      demo: "",
-    },
-    {
-      image: "",
-      name: "bestbuy.com",
-      desc: "It's an ecommerce website in which user can buy electronics gadgets.",
-      techStack: "React | ChakraUI | Router",
-      github: "https://github.com/Sahnawaz7hussain/annoyed-wind-8656",
       demo: "",
     },
   ];
