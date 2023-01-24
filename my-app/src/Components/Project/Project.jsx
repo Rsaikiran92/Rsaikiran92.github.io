@@ -5,7 +5,7 @@ export default function Projects() {
   const [showP2, setShowP2] = useState(false);
   const projects = [
     {
-      image: "",
+      image: "https://github.com/Rsaikiran92/Rsaikiran92.github.io/blob/main/my-app/src/Components/Project/images/Screenshot_20230123_105732.png?raw=true",
       name: "bestbuy.com",
       desc: "It's an ecommerce website in which user can buy electronics gadgets.",
       techStack: "React | ChakraUI | Router",

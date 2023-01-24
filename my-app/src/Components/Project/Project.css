@@ -42,8 +42,9 @@
   width: 521px;
   /* height: auto; */
   margin-left: 0px;
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
+  /*border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;*/
+  border-radius: 20px;
 }
 .commonContainer:hover {
   -ms-transform: scale(1.5); /* IE 9 */
@@ -132,8 +133,8 @@
 /* Media Query for Tablets Ipads portrait mode completed */
 @media (min-width: 768px) and (max-width: 1026px) {
   .commonContainer {
-    /* background-color: red; */
-    height: 280px;
+    /* background-color: red; 
+    height: 280px;*/
     width: 85%;
   }
   .commonPic {
