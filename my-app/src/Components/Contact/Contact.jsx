@@ -3,7 +3,7 @@ import {BsTelephoneFill} from "react-icons/bs"
 import {  FaGithubSquare } from "react-icons/fa"
 import { ImFolderDownload } from "react-icons/im"
 import { MdEmail } from "react-icons/md"
-
+import  Resume from  "../Resume/fp04_437_Rsaikiran_Resume.pdf"
 import "./Contact.css"
 
 
@@ -11,19 +11,22 @@ function Contact(){
     return(
     <div id="contact" >
         <div className="container"style={{padding:"40px"}}>
-                    <h1 className="title">Contact Me</h1>
-                    <p><MdEmail/>saikiran92rk@gmail.com</p>
-                    <p><BsTelephoneFill/>+91-9110321756</p>
-                    <div className="icons">
-                        <a target={"_blank"} rel="noreferrer" href="https://github.com/Rsaikiran92"><FaGithubSquare/></a>
-                        <a target={"_blank"} rel="noreferrer" href="https://www.linkedin.com/in/r-sai-kiran-451a07232/"><AiFillLinkedin  /></a>
-                        {/*<a target={"_blank"} rel="noreferrer" href=""><AiFillTwitterSquare  /></a>*/}
-                    </div>
-                    <a href="../Resume/R-saikiran-Resume.pdf" download className="btn btn2" style={{color:"black"}}><ImFolderDownload style={{marginBottom:"5px",marginRight:"5px"}}/>Resume</a>
-                
-        
-    </div>
-  </div>  
+            <h1 className="title">Contact Me</h1>
+            <p><MdEmail/>saikiran92rk@gmail.com</p>
+            <p><BsTelephoneFill/>+91-9110321756</p>
+            <div className="icons">
+                <a target={"_blank"} rel="noreferrer" href="https://github.com/Rsaikiran92"><FaGithubSquare/></a>
+                <a target={"_blank"} rel="noreferrer" href="https://www.linkedin.com/in/r-sai-kiran-451a07232/"><AiFillLinkedin  /></a>
+                {/*<a target={"_blank"} rel="noreferrer" href=""><AiFillTwitterSquare  /></a>*/}
+            </div>
+            <a  href={Resume} download rel="noreferrer" className="btn btn2" style={{color:"black"}}>
+                <button style={{border:"none",color:"#76263f",fontWeight:"bold",backgroundColor:"white"}} onClick={()=>window.open("https://drive.google.com/file/d/1QulNEKco7eXili15f8CcnwXWcWjS0AVL/view?usp=share_link")}>
+                    <ImFolderDownload style={{marginBottom:"5px",marginRight:"5px"}}/>
+                    Resume
+                </button>
+            </a>   
+        </div>
+    </div>  
     )
 }
 

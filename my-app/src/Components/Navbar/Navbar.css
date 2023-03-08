@@ -1,3 +1,4 @@
+/*
 .App-header {
     background-color: #282c34;
     min-height: 100vh;
@@ -21,7 +22,7 @@
       transform: rotate(360deg);
     }
   }
-  
+  */
   .sticky {
     background-color: #1b1a2ea9 ;
     transition: all 0.3s ease-out 0s ;
