@@ -3,7 +3,7 @@ import {BsTelephoneFill} from "react-icons/bs"
 import {  FaGithubSquare } from "react-icons/fa"
 import { ImFolderDownload } from "react-icons/im"
 import { MdEmail } from "react-icons/md"
-import  Resume from  "../Resume/fp04_437_Rsaikiran_Resume.pdf"
+import  Resume from  "../Resume/RSaiKiran_fp04_437.pdf"
 import "./Contact.css"
 
 
@@ -20,7 +20,7 @@ function Contact(){
                 {/*<a target={"_blank"} rel="noreferrer" href=""><AiFillTwitterSquare  /></a>*/}
             </div>
             <a  href={Resume} download rel="noreferrer" className="btn btn2" style={{color:"black"}}>
-                <button style={{border:"none",color:"#76263f",fontWeight:"bold",backgroundColor:"white"}} onClick={()=>window.open("https://drive.google.com/file/d/1QulNEKco7eXili15f8CcnwXWcWjS0AVL/view?usp=share_link")}>
+                <button style={{border:"none",color:"#76263f",fontWeight:"bold",backgroundColor:"white"}} onClick={()=>window.open("https://drive.google.com/file/d/1KUV3Cpq45lpe5Xpws9Zc8wfnvuTskGYo/view?usp=sharing")}>
                     <ImFolderDownload style={{marginBottom:"5px",marginRight:"5px"}}/>
                     Resume
                 </button>

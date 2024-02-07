@@ -10,7 +10,7 @@ import {FcAbout} from "react-icons/fc"
 import {GiSkills,GiNotebook} from "react-icons/gi"
 
 import "./Navbar.css"
-import  Resume from  "../Resume/fp04_437_Rsaikiran_Resume.pdf"
+import  Resume from  "../Resume/RSaiKiran_fp04_437.pdf"
 
 
 function NavBar() {
@@ -85,7 +85,7 @@ function NavBar() {
             </Nav.Item>
             <Nav.Item>
               <a  href={Resume} download rel="noreferrer"  style={{color:"black"}}>
-                  <button style={{border:"none",color:"white",backgroundColor:"#76263f",marginTop:"10px"}} onClick={()=>window.open("https://drive.google.com/file/d/1QulNEKco7eXili15f8CcnwXWcWjS0AVL/view?usp=share_link")}>
+                  <button style={{border:"none",color:"white",backgroundColor:"#76263f",marginTop:"10px"}} onClick={()=>window.open("https://drive.google.com/file/d/1KUV3Cpq45lpe5Xpws9Zc8wfnvuTskGYo/view?usp=sharing")}>
                       <GiNotebook style={{ marginBottom: "2px" }} />
                       Resume
                   </button>
