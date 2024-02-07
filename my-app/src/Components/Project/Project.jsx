@@ -5,7 +5,7 @@ export default function Projects() {
   const [showP2, setShowP2] = useState(false);
   const projects = [
     {
-      image: "https://camo.githubusercontent.com/f450ebedc15f7904e2d8af276901e6e2aa754bf5e155f6d0836d13aba42307d5/68747470733a2f2f692e696d6775722e636f6d2f565a6b4d6f36502e706e67",
+      image: "https://i.postimg.cc/tRB0kScm/Screenshot-2024-02-07-164014.png",
       name: "Purplle.com",
       desc: " It's an ecommerce website in which user can buy all your favourite beauty products, also able to buy at your finger tips.",
       techStack: "React | ChakraUI | MongoDB",
