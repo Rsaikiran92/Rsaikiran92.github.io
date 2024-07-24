@@ -1,27 +1,63 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+import {
+  Box,
+  Heading,
+  Text,
+  Image,
+  useColorModeValue,
+} from "@chakra-ui/react";
+import { skillsData, skillsData2 } from "./SkillsData";
 
-import "./Skills.css";
-
-
-import { skillsData ,skillsData2} from "./SkillsData";
-
-
-function Skills() {
- 
-
+function Skills({ isDark }) {
+  const hoverBorderColor = useColorModeValue("#76263f", "#caf229");
   const skillBoxStyle = {
-    backgroundColor: "red".secondary,
-    boxShadow: `0px 0px 30px ${"red".primary30}`,
+    // border:"3px solid #292929",
+    borderRadius: "10px",
+    width: "160px",
+    height: "160px",
+    margin: "1.5rem",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: "2rem 1rem",
+    transition: "300ms ease-in-out",
   };
 
   return (
-    <div className="skills" style={{ backgroundColor: "#fadecd"}} id="skills">
-      <div className="skillsHeader">
-        <h2 style={{ color: "#76263f" }}>Skills & Tools</h2>
-      </div>
-      <div className="skillsContainer">
-        <div className="skill--scroll">
+    <Box
+      className="skills"
+      bg={isDark ? "#131313" : "#fadecd"}
+      id="skills"
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      justifyContent="flex-start"
+      minHeight="60vh"
+      p={{base:"4rem 1rem" , "2xl":"4rem 7rem 0px 4rem" }}
+     
+    >
+      <Box
+        className="skillsHeader"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+      >
+        <Heading as="h2" fontSize={{base:"2rem",md:"3.5rem"}} color={isDark ? "#caf229" : "#76263f"}>
+          Skills & Tools
+        </Heading>
+      </Box>
+      <Box
+        className="skillsContainer"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        width="100%"
+        marginTop="3rem"
+        
+      >
+        <Box className="skill--scroll" width="100%" margin="0 2rem" >
           <Marquee
             gradient={false}
             speed={80}
@@ -32,16 +68,45 @@ function Skills() {
             direction="left"
           >
             {skillsData.map((skill, id) => (
-              <div className="skill--box" key={id} style={skillBoxStyle}>
-                <img src={skill.image} alt={skill} />
-                <h3 style={{ color: "#76263f" }}>{skill.skill}</h3>
-              </div>
+              <Box
+                key={id}
+                style={skillBoxStyle}
+                bg={isDark ? "#1f1f1f" : "#fafafa"}
+                border={isDark && "3px solid #292929" }
+                _hover={{
+                  transform: "scale(1.15)",
+                  border: `3px solid ${hoverBorderColor}`,
+                }}
+              >
+                <Image
+                  src={skill.image}
+                  alt={skill.skill}
+                  height="50px"
+                  pointerEvents="none"
+                />
+                <Text
+                  fontSize="22px"
+                  marginTop="1rem"
+                  fontWeight="700"
+                  textAlign="center"
+                >
+                  {skill.skill}
+                </Text>
+              </Box>
             ))}
           </Marquee>
-        </div>
-      </div>
-      <div className="skillsContainer" style={{marginTop:"0px"}}>
-        <div className="skill--scroll">
+        </Box>
+      </Box>
+      <Box
+        className="skillsContainer"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        width="100%"
+        marginTop="0px"
+        
+      >
+        <Box className="skill--scroll" width="100%" margin="0 2rem">
           <Marquee
             gradient={false}
             speed={80}
@@ -52,15 +117,36 @@ function Skills() {
             direction="right"
           >
             {skillsData2.map((skill, id) => (
-              <div className="skill--box" key={id} style={skillBoxStyle}>
-                <img src={skill.image} alt={skill} />
-                <h3 style={{ color: "#76263f" }}>{skill.skill}</h3>
-              </div>
+              <Box
+                key={id}
+                style={skillBoxStyle}
+                bg={isDark ? "#1f1f1f" : "#fafafa"}
+                border={isDark && "3px solid #292929" }
+                _hover={{
+                  transform: "scale(1.15)",
+                  border: `3px solid ${hoverBorderColor}`,
+                }}
+              >
+                <Image
+                  src={skill.image}
+                  alt={skill.skill}
+                  height="50px"
+                  pointerEvents="none"
+                />
+                <Text
+                  fontSize="22px"
+                  marginTop="1rem"
+                  fontWeight="700"
+                  textAlign="center"
+                >
+                  {skill.skill}
+                </Text>
+              </Box>
             ))}
           </Marquee>
-        </div>
-      </div>
-    </div>
+        </Box>
+      </Box>
+    </Box>
   );
 }
 

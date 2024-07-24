@@ -40,7 +40,9 @@
     color: #76263f;
     display: inline-block ;
 }
-
+.webdev{
+  font-size: 35px;
+}
 /*
 .iconbtn{
     margin-left: 40px;
@@ -125,6 +127,21 @@
     }
   }
   
-  
+  @media (max-width: 480px) {
+    .heading-name {
+      font-size: 1.8em !important;
+      color: #76263f;
+    }
+    .heading {
+      font-size: 1.7em !important;
+    }
+    .webdev{
+      font-size: 25px;
+    }
+    .myAvtar {
+      padding-top: 0 !important;
+      padding-bottom: 2em !important;
+    }
+  }
 
  

@@ -38,13 +38,14 @@
   border: 2px solid #76263f;
 }
 
-.commonPic {
+.commonPic,.rsis-image{
   width: 521px;
   /* height: auto; */
   margin-left: 0px;
   /*border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;*/
   border-radius: 20px;
+  
 }
 .commonContainer:hover {
   -ms-transform: scale(1.5); /* IE 9 */
@@ -64,6 +65,7 @@
   font-weight: 600;
   margin-top: 30px;
   margin-bottom: 20px;
+  text-align: left;
 }
 .atag {
   text-decoration: none;
@@ -77,11 +79,14 @@
   letter-spacing: 1.2px;
   border: 0px solid blue;
   width: 90%;
+  text-align: justify;
+  
 }
 .teckStack {
   color: white;
   font-size: 19px;
   margin-top: 15px;
+  text-align: left;
 }
 .teckSpan {
   color: #dd9a05;
@@ -90,10 +95,10 @@
 .linkingBtn {
   border: 0px solid blue;
   width: 50%;
-  margin: auto;
+  
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  gap: 30px;
   margin-top: 30px;
   /* margin-bottom: 20px; */
 }
@@ -206,7 +211,7 @@
   }
   .projectHeading {
     margin-top: 10px;
-    text-align: center;
+    text-align: left;
     color: #dd9a05;
   }
   .projectPara {
@@ -215,13 +220,13 @@
     line-height: 1.5;
     letter-spacing: 1.2px;
     margin-top: 0px;
-    text-align: center;
+    text-align: justify;
     margin: auto;
   }
   .teckStack {
     color: white;
     font-size: 18px;
-    text-align: center;
+    text-align: left;
     border: 0px solid white;
   }
   .linkingBtn {
@@ -248,19 +253,22 @@
     font-size: 2.5rem;
   }
   .pro {
-    background-color: #fadecd
+    background-color: #fadecd;
+    padding: 16px;
   }
   .commonContainer {
+    width: 100%;
     height: auto;
     display: block;
     box-sizing: border-box;
     padding-bottom: 20px;
-    background-color:#76263f
+    background-color:#76263f;
+    
   }
   .commonPic {
     width: 100%;
     height: 190px;
-    border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
   }
   .projectDetails {
@@ -269,33 +277,31 @@
     margin-bottom: 0px;
   }
   .projectHeading {
-    margin-top: 0px;
+    margin-top: 10px;
     margin-bottom: 7px;
-    text-align: center;
+    text-align: justify;
     font-size: 22px;
   }
   .projectPara {
     font-size: 17px;
-    width: 85%;
+    width: 100%;
     line-height: 1.5;
     letter-spacing: 1.2px;
     margin-top: 0px;
-    text-align: center;
-    margin: auto;
+    text-align: justify;
   }
   .teckStack {
     color: white;
     font-size: 18px;
-    text-align: center;
+    text-align: justify;
     border: 0px solid white;
     margin-top: 0px;
   }
   .linkingBtn {
+    width: 100%;
     margin-top: 10px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 10px;
   }
-  .live:hover {
-    background-color: #76263f;
-  }
+  
 }

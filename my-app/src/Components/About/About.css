@@ -1,16 +1,17 @@
 .about {
-    position: relative;
-    background-color: #fadecd;
-}
-.h2{
-  font-family: var(--primaryFont);
-    font-style: normal;
-    font-weight: bold;
-    font-size: 3.5rem;
-    text-align: center;
+  position: relative;
+  background-color: #fadecd;
 }
 
-.about .line-styling{
+.h2 {
+  font-family: var(--primaryFont);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.about .line-styling {
   position: absolute;
   top: 50px;
   left: 50%;
@@ -23,13 +24,14 @@
   justify-content: space-between;
 }
 
-.about .line-styling .style-circle{
+.about .line-styling .style-circle {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #76263f;
 }
-.about .line-styling .style-line{
+
+.about .line-styling .style-line {
   width: 95%;
   height: 5px;
   border-radius: 10px;
@@ -37,119 +39,122 @@
 }
 
 .about-body {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 8rem;
-    height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 8rem;
+  height: fit-content;
 }
 
 .about-description {
-    margin: auto;
-    width: 80%;
-    height: fit-content;
-    color:#76263f
+  margin: auto;
+  width: 80%;
+  height: fit-content;
+  color: #76263f
 }
 
-.about-description >h2 {
-    margin-bottom: 40px;
-    text-align: center;
-    font-size: 3.5rem;
-    
-    font-family: var(--primaryFont);
-    
+.about-description>h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 3.5rem;
+
+  font-family: var(--primaryFont);
+
 }
 
-.about-description > p {
-    font-size: 1.35rem;
-    text-align: justify;
-    color: white;
-    font-weight: 700;
-    font-family: var(--primaryFont);
+.about-description>p {
+  font-size: 1.35rem;
+  text-align: justify;
+  color: white;
+  font-weight: 700;
+  font-family: var(--primaryFont);
 }
 
 
 @media (min-width: 992px) and (max-width: 1380px) {
 
-    .about-description > h2 {
-      font-size: 3.3rem;
-      margin-bottom: 30px;
-    }
-    .about-description > p {
-      font-size: 1.15rem;
-    }
+  .about-description>h2 {
+    font-size: 3.3rem;
+    margin-bottom: 30px;
+  }
 
-    .about-img>img {
-        width: 300px;
-    } 
+  .about-description>p {
+    font-size: 1.15rem;
+  }
+
+  .about-img>img {
+    width: 300px;
+  }
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
 
-  .about .line-styling{
+  .about .line-styling {
     top: 20px;
   }
 
-    .about-body {
-        padding-top: 2rem;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: space-evenly;
-    }
+  .about-body {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 
-    .about-description{
-        flex: 0.6;
-        box-sizing: border-box;
-        /* padding: 5% 10%; */
-        padding: 10px;
+  .about-description {
+    flex: 0.6;
+    box-sizing: border-box;
+    /* padding: 5% 10%; */
+    padding: 10px;
 
-    }
+  }
 
-    .about-description > h2 {
-        font-size: 3rem;
-        margin-bottom: 20px;
-    }
+  .about-description>h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
 
-    .about-description > p {
-        font-size: 1.1rem;
-    }
+  .about-description>p {
+    font-size: 1.1rem;
+  }
 
 }
 
-@media screen and (max-width: 800px){
-  .about .line-styling .style-circle{
+@media screen and (max-width: 800px) {
+  .about .line-styling .style-circle {
     width: 8px;
     height: 8px;
     border-radius: 50%;
   }
-  .about-description > h2{
+
+  .about-description>h2 {
     align-self: center;
   }
 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
 
-  .about .line-styling .style-circle{
+  .about .line-styling .style-circle {
     width: 5px;
     height: 5px;
     border-radius: 50%;
   }
-  .about .line-styling .style-line{
+
+  .about .line-styling .style-line {
     width: 93%;
     height: 3px;
     border-radius: 10px;
   }
 
-  .about-description > h2 {
+  .about-description>h2 {
     font-size: 2.5rem;
   }
 
-    .about-description > p{
-      font-size: 0.95rem;
-    }
+  .about-description>p {
+    font-size: 0.95rem;
+  }
 }
 
 
@@ -164,7 +169,7 @@
   justify-content: center;
   width: 100%;
   color: #76263f;
-  padding-right: 7%;
+  
 }
 
 .education-description {
@@ -179,7 +184,7 @@
   margin-left: 8%;
 }
 
-.education-description > h1 {
+.education-description>h1 {
   font-size: 3.5rem;
   font-family: var(--primaryFont);
   margin-bottom: 2rem;
@@ -195,6 +200,7 @@
   padding: 1.5rem;
   border-radius: 20px;
   margin-bottom: 1.5rem;
+  background-color: #76263f;
   transition: background-color 200ms ease-in-out;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -209,7 +215,7 @@
   flex-shrink: 0;
 }
 
-.educard-img > img {
+.educard-img>img {
   width: 40px;
 }
 
@@ -217,12 +223,13 @@
   margin-left: 0.6rem;
 }
 
-.education-details > h6 {
+.education-details>h6 {
   font-family: var(--primaryFont);
   font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
+
 /*
 .education-details > h4 {
   font-family: var(--primaryFont);
@@ -246,34 +253,38 @@
   align-items: center;
 }
 
-.education-image > img {
+.education-image>img {
   width: 100%;
 }
+
 .text {
-    font-size: 1.35rem;
-    color: white;
-    font-weight: 700;
-    font-family: var(--primaryFont);
-    text-shadow: 2px 2px 5px #76263f;
+  color: white;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  font-family: var(--primaryFont);
 }
 
-@media (min-width: 992px) and (max-width: 1380px) {
-}
+
 
 @media screen and (max-width: 992px) {
   .education {
     min-height: 100%;
   }
+
   .education-image {
     display: none;
   }
+
   .education-description {
     flex: 1;
     margin: auto;
   }
-  .education-description > h1 {
+
+  .education-description>h1 {
     font-size: 3.2rem;
   }
+
   .education-card {
     width: 100%;
     padding: 1.5rem;
@@ -282,64 +293,70 @@
 }
 
 @media screen and (max-width: 800px) {
-  .education-description > h1 {
+  .education-description>h1 {
     font-size: 3rem;
     margin-bottom: 2rem;
     align-self: center;
   }
+
   .education-description {
     padding: 1rem;
   }
+
   .education-card {
     padding: 1rem;
     margin-bottom: 1.5rem;
     /*height: 130px;*/
   }
+
   .educard-img {
     border-radius: 50%;
     width: 45px;
     height: 45px;
   }
 
-  .educard-img > img {
+  .educard-img>img {
     width: 30px;
   }
-  .education-details > h6 {
+
+  .education-details>h6 {
     font-size: 0.85rem;
     margin-bottom: 0.45rem;
   }
 
-  .education-details > h4 {
+  .education-details>h4 {
     font-size: 1.125rem;
     line-height: 126%;
   }
 
-  .education-details > h5 {
+  .education-details>h5 {
     font-size: 1.05rem;
     line-height: 126%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .education-description > h1 {
+  .education-description>h1 {
     font-size: 2.5rem;
   }
 }
+
 @media screen and (max-width: 425px) {
-  .educard-img > img {
+  .educard-img>img {
     width: 30px;
   }
-  .education-details > h6 {
+
+  .education-details>h6 {
     font-size: 0.8rem;
     margin-bottom: 0.45rem;
   }
 
-  .education-details > h4 {
+  .education-details>h4 {
     font-size: 1rem;
     line-height: 126%;
   }
 
-  .education-details > h5 {
+  .education-details>h5 {
     font-size: 1rem;
     line-height: 126%;
   }
